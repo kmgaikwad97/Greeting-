@@ -1,0 +1,17 @@
+// new and shortcut way
+
+ReactDOM.render(<h1> Hello World </h1>, document.getElementById("root"));
+
+// pure js
+
+var h1Tag = document.createElement('h1');
+h1Tag.innerHTML = "Kshitij Gaikwad";
+document.getElementById('root').appendChild(h1tag);
+
+//3rd way Using Babel
+
+ReactDOM.render(React.createElement("h1"
+,null,
+"Hello World"),document.getElementById("root"));
+
+
