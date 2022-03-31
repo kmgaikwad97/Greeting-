@@ -2,55 +2,78 @@
 // var ReactDOM = require('react-dom');
 import React, { createElement } from 'react'
 import ReactDOM from 'react-dom'
+import App from "./App"
+import Apps from './Apps';
 import "./index.css"
 
 
+ReactDOM.render(
+    <>
+        <Apps/>
+
+    </>
+    , document.getElementById("root"));
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+    
+
+// Greeting Project
+    
 // to test we can set the date & time
-let currDate = new Date(2022, 3, 31, 9);
+// let currDate = new Date(2022, 3, 31s, 9);
 
 
 // actual code
 // let currDate = new Date();
-currDate = currDate.getHours()
+// currDate = currDate.getHours()
 // console.log(currDate); //12
 
-let greeting = " ";
-const cssStyle = {}
-const bgcssStyle = {}
+// let greeting = " ";
+// const cssStyle = {}
+// const bgcssStyle = {}
 
-if (currDate >= 4 && currDate < 12) {
-    greeting = "Good Morning";
-    cssStyle.color = "green";
-    bgcssStyle.background = "green";
-} else if (currDate >= 12 && currDate <= 16) {
-    greeting = "Good Afternoon";
-    cssStyle.color = "darkgoldenrod";
-    bgcssStyle.background = "darkgoldenrod";
-} else if(currDate > 16 && currDate <= 19){
-    greeting = "Good Evening";
-    cssStyle.color = "orange";  
-    bgcssStyle.background = "orange";  
-} 
-else {
-    greeting = "Good Night"
-    cssStyle.color = "black";
-    bgcssStyle.background = "black";
-}
+// if (currDate >= 4 && currDate < 12) {
+//     greeting = "Good Morning";
+//     cssStyle.color = "green";
+//     bgcssStyle.background = "green";
+// } else if (currDate >= 12 && currDate <= 16) {
+//     greeting = "Good Afternoon";
+//     cssStyle.color = "darkgoldenrod";
+//     bgcssStyle.background = "darkgoldenrod";
+// } else if(currDate > 16 && currDate <= 19){
+//     greeting = "Good Evening";
+//     cssStyle.color = "orange";  
+//     bgcssStyle.background = "orange";  
+// } 
+// else {
+//     greeting = "Good Night"
+//     cssStyle.color = "black";
+//     bgcssStyle.background = "black";
+// }
 
-ReactDOM.render(
-    <>
-        <div style={bgcssStyle}>
+// ReactDOM.render(
+//     <>
+//         <div style={bgcssStyle}>
 
-            <h1>Hello ! <span style={cssStyle}> {greeting}</span></h1>
+//             <h1>Hello ! <span style={cssStyle}> {greeting}</span></h1>
 
 
-        </div>
+//         </div>
 
-    </>
-    , document.getElementById("root"));
+//     </>
+//     , document.getElementById("root"));
 
 
 
